@@ -4,5 +4,5 @@ export default {
   alias: {
     "/@/": resolve(__dirname, "./src"),
   },
-  base: './'
+  base: './noCode'
 };
