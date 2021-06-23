@@ -1,0 +1,1 @@
+import{o as s,c as a,d,f as e}from"./index.33678682.js";var t={expose:[],setup:t=>(t,c)=>(s(),a("div",null,[d("img",{src:e("/_assets/database.36dd9cb8.png"),width:"800"},null,8,["src"])])),__scopeId:"data-v-4c48d5fd"};export default t;
