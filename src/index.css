@@ -8,3 +8,9 @@
 .ml20{
   margin-left: 20px;
 }
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}

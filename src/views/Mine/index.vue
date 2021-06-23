@@ -21,16 +21,18 @@
     </el-header>
     <el-container class="container-x">
       <el-aside width="200px" class="side-l">
-        <el-menu>
-          <el-menu-item> 新建 </el-menu-item>
-          <el-menu-item> 项目列表 </el-menu-item>
-          <el-menu-item> 回收站 </el-menu-item>
-          <el-menu-item> 数据库 </el-menu-item>
-          <el-menu-item> 部署服务器 </el-menu-item>
+        <el-menu router>
+          <el-menu-item index="/mine/create"> 新建 </el-menu-item>
+          <el-menu-item index="/mine/project"> 项目列表 </el-menu-item>
+          <el-menu-item index="/mine/recycleBin"> 回收站 </el-menu-item>
+          <el-menu-item index="/mine/dataBase"> 数据库 </el-menu-item>
+          <el-menu-item index="/mine/deploy"> 部署服务器 </el-menu-item>
         </el-menu>
       </el-aside>
 
-      <el-main> 内容 </el-main>
+      <el-main class="pd">
+        <router-view></router-view>
+      </el-main>
     </el-container>
   </el-container>
 </template>
@@ -60,5 +62,8 @@ import person from "/@/assets/person.png";
 }
 .side-l {
   height: 100%;
+}
+.pd {
+  padding: 20px;
 }
 </style>
